@@ -1,7 +1,9 @@
-i#include <stdio.h>
+#include <stdio.h>
 
 int main () 
 {
+	// Program to print the greater of two numbers taken as input
+
 	int A, B;
 	printf("Enter first number: ");
 	scanf("%d", &A);
