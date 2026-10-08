@@ -21,11 +21,11 @@ int main ()
         printf("\nYou are eligible to vote ");
         if(Age <= 60)
         {
-            printf("and you'e an young adult. ");
+            printf("and you are a young adult. ");
         }
         else
         {
-            printf("and you'e an senior citizen. ");
+            printf("and you are a senior citizen. ");
         }
     }
     else if(Age >= 100)
@@ -37,7 +37,7 @@ int main ()
         printf("\nYou are not eligible to vote.");
     }
     
-    printf("Your gender is %c", Gender);
+    printf("Your gender is %c\n", Gender);
     
     return 0; 
 }

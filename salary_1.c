@@ -2,15 +2,22 @@
 
 int main()
 {
-int basicSalary;
-int grossSalary;
+    // Calculating gross salary, by adding allowances given as percentage of basic salary
 
-printf("Enter basic salary: ");
-scanf("%d", &basicSalary);
+    int basicSalary;
+    float grossSalary;
+    float dearnessAllowance;
+    float houseRentAllowance;
 
-grossSalary = basicSalary + 0.4*basicSalary + 0.2*basicSalary;
+    printf("Enter basic salary: ");
+    scanf("%d", &basicSalary);
 
-printf("Gross salary is: %d", grossSalary);
+    dearnessAllowance = 0.2 * basicSalary;
+    houseRentAllowance = 0.4 * basicSalary;
 
-return 0;
+    grossSalary = basicSalary + dearnessAllowance + houseRentAllowance;
+
+    printf("Gross salary is: %f\n", grossSalary);
+
+    return 0;
 }

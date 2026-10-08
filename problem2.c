@@ -2,25 +2,29 @@
 
 int main ()
 {
+    // Program to give 10% discount if quantity of item is more than 1000
+
     int quantity;
-    int price;
-    int expenses;
-    
+    float price;
+    float expenses;
+    float discount;
+
     printf("\tEnter the price of one item: ");
-    scanf("%d", &price);
+    scanf("%f", &price);
     
     printf("\tEnter the quantity: ");
     scanf("%d", &quantity);
     
     if(quantity > 1000)
     {
-        expenses = quantity * price * 0.9;
+        discount = 10;
     }
     else
     {
-        expenses = quantity * price;
+        discount = 0;
     }
-        printf("\tYour total expenses are: %d", expenses);
+	expenses = quantity * price * (1 - discount/100);
+        printf("\tYour total expenses are: %f\n", expenses);
         
     return 0;
 }
